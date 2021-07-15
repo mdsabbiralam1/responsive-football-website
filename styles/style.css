@@ -94,28 +94,39 @@ body{
 .player-detail{
     Width : 300px;
     height: 124px;
-    margin-bottom: 63px;
+    margin-bottom: 20px;
 }
 
 /* all player style end
 ------------------ */
 
 /* Conmebol team name */
-tr{
-    border:2px solid tomato;
-}
-#conmebol-team{
+.table-info{
     justify-content: center;
+    display: flex;
+    margin-bottom:60px;
+}
+tr{
+    border:2px solid salmon;
 }
 table {
     border-collapse: collapse;
+    justify-content: center;
 }
 
 td,
 th {
-    border: 2px solid red;
+    border: 2px solid rgba(146, 112, 27, 0.822);
     text-align: center;
     padding: 12px;
+    background-color: rgba(128, 128, 128, 0.294);
+}
+/* live match */
+iframe{
+    display: flex;
+    justify-content: center;
+    width:420px;
+    height:320px;
 }
 
 /* footer-style

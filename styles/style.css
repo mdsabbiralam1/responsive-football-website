@@ -1,0 +1,169 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*-----------
+ common style
+ ------------ */
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* copa america style 1st section start 
+-------------------------------------*/
+.copa-section{
+    background-color: #1307c5;
+    height:677px;
+    display: flex;
+    justify-content: center;
+
+}
+.copa-area{
+    color: white;
+    width: 485px;
+    height: 230px;
+    margin-top: 207px;
+    margin-left: 156px;
+    margin-bottom: 27px;
+}
+
+.title h1{
+    font-size: 70px;
+
+}
+.banner-photo img{
+    Width :554px;
+    height: 436px;
+     margin-top: 153px;
+     margin-right: 140px;
+    margin-left: 102px;
+    overflow: hidden;
+    
+}
+
+
+.banner-photo:hover .photo{
+    transform: rotate(360deg);
+    transition: transform 5s ease-in-out;
+}
+
+ .live-button{
+    background-color: #E02C6D;
+    color: white;
+    width: 200px;
+    height: 50px;font-size: 24px;
+    margin-top:0px;
+ }
+    
+/*----------------------------------
+ copa america style 1st section end
+ ---------------------------------- */
+
+
+
+/* all player style start
+------------------ */
+.all-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    padding: 70px 210px 165px 180px;
+}
+.players{
+    width: 330px;
+    height: 474px;
+    background-color:  #FFFFFF;
+    box-shadow: 0 4px 8px 0 ;
+}
+
+.player{ height: 396px;
+         Width : 300px;
+         padding:15px;    
+}
+
+.player-identity{
+    color: #6C6C6C;
+}
+
+.player-photo img{
+    Width : 300px;
+    Height : 256px;
+}
+
+.player-detail{
+    Width : 300px;
+    height: 124px;
+    margin-bottom: 63px;
+}
+
+/* all player style end
+------------------ */
+
+/* Conmebol team name */
+tr{
+    border:2px solid tomato;
+}
+#conmebol-team{
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid red;
+    text-align: center;
+    padding: 12px;
+}
+
+/* footer-style
+---------------*/
+
+.footer-logo{
+  
+    text-align: center;
+    padding-bottom: 59px;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+.fab{
+    color: cadetblue;
+    font-size: 37px;
+    padding: 20px 14px 51px 14px;
+}
+.copy-right{
+        font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding-bottom: 59px;
+}
+/* Media Queries */
+
+/* animation */
+@keyframes mymove {
+    from {background-color: #2D25A0;}
+    to {background-color: #09a1dd}
+  }
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    .copa-section{
+        justify-content: center;
+        grid-template-columns: repeat(1fr);
+        flex-direction: column;
+        height: 1000px;
+        overflow-x: hidden;
+        width: 688px;
+    }
+    .players{
+        grid-template-columns: repeat(1fr);
+        width: 100%;
+        
+    }
+    
+    
+
+   
+}
